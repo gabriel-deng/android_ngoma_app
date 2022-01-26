@@ -6,7 +6,7 @@
     <string name="title_tracks">Tracks</string>
     <string name="title_playlist">Playlist</string>
     <string name="title_settings">Settings</string>
-<!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_details">Playing</string>
 </resources>

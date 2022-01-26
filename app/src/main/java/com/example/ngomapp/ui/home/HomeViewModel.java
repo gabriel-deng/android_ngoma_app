@@ -71,9 +71,12 @@ public class HomeViewModel extends AndroidViewModel {
         selected.setValue(song);
         selectedposition.setValue(position);
     }
+    public LiveData<Integer> getIndex(){return selectedposition;}
+
     public  LiveData<Song> getSelected(){
         return selected;
     }
+
     public LiveData<Song> getNext(){
         int position;
         if(selectedposition.getValue() > getSongs().getValue().size()){
@@ -87,6 +90,7 @@ public class HomeViewModel extends AndroidViewModel {
      select(song, position);
      return  getSelected();
     }
+
     public LiveData<Song> getPrevious(){
         int position;
         if(selectedposition.getValue() ==0){
